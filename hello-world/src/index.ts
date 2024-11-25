@@ -72,3 +72,57 @@ let employee:{
 //readonly property makes sure that the value cannot be read again in the code as below
 // employee.id=0; 
 
+
+
+// Function with typed parameters and return type
+function add(a: number, b: number): number {
+    return a + b;
+  }
+  
+  console.log(add(5, 3)); // Outputs: 8
+  
+
+// A variable can hold more than one type using union
+let data: string | number;
+data = "TypeScript"; // valid
+data = 2024;         // valid
+// data = true;      // Error: Type 'boolean' is not assignable to 'string | number'
+console.log(data); 
+
+
+// Enum for predefined values
+enum Color {
+    Red = "RED",
+    Green = "GREEN",
+    Blue = "BLUE",
+  }
+  
+  const favoriteColor: Color = Color.Green;
+  console.log(favoriteColor); // Outputs: GREEN
+
+
+  // Alias for complex types
+type Point = { x: number; y: number };
+
+const origin2: Point = { x: 0, y: 0 };
+console.log(origin2); // Outputs: { x: 0, y: 0 }
+
+
+// Creating a class with properties and methods
+class Person {
+    constructor(public name: string, private age: number) {}
+  
+    greet(): string {
+      return `Hi, my name is ${this.name}.`;
+    }
+  }
+  
+  const person = new Person("Bob", 30);
+  console.log(person.greet()); // Outputs: Hi, my name is Bob.
+
+
+  // Type assertion (use cautiously)
+let someValue: unknown = "Hello, TypeScript!";
+let strLength: number = (someValue as string).length;
+
+console.log(strLength); // Outputs: 18
