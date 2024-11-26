@@ -25,4 +25,36 @@ let employee = { id: 1,
     retire: (date) => {
         console.log(date);
     } };
+function add(a, b) {
+    return a + b;
+}
+console.log(add(5, 3));
+let data;
+data = "TypeScript";
+data = 2024;
+console.log(data);
+var Color;
+(function (Color) {
+    Color["Red"] = "RED";
+    Color["Green"] = "GREEN";
+    Color["Blue"] = "BLUE";
+})(Color || (Color = {}));
+const favoriteColor = Color.Green;
+console.log(favoriteColor);
+const origin2 = { x: 0, y: 0 };
+console.log(origin2);
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    greet() {
+        return `Hi, my name is ${this.name}.my age is ${this.age}`;
+    }
+}
+const person = new Person("Bob", 30);
+console.log(person.greet());
+let someValue = "Hello, TypeScript!";
+let strLength = someValue.length;
+console.log(strLength);
 //# sourceMappingURL=index.js.map

@@ -20,9 +20,9 @@ object
                              -    npm tsc --init
 3.TO EXECUTE generally       -    npx tsc app.ts
                              -    tsc app.ts
-                             -    npx tsc (compile)
+                             -.   npx tsc (compile)
 4.TO CHECK VERSION           -    tsc -v
-5.CHANGES IN tsconfig.json   -    npm tsc //to execute
+5.CHANGES IN tsconfig.json   -    npx tsc //to execute
 6.TO CHECK CONSOLE OUTPUTS   -    node (location of js file)
-IN TERMINAL                       npm node dist/src/index.js
+IN TERMINAL                  -.   npx node dist/src/index.js
 7.

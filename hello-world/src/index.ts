@@ -113,7 +113,7 @@ class Person {
     constructor(public name: string, private age: number) {}
   
     greet(): string {
-      return `Hi, my name is ${this.name}.`;
+      return `Hi, my name is ${this.name}.my age is ${this.age}`;
     }
   }
   
