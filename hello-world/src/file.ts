@@ -128,3 +128,24 @@ console.log(customer?.birthday?.getFullYear());
 
 let log:any=null
 log?.('a');
+
+
+
+
+//interfaces
+//Extending an interface means you are creating a new interface with the same properties as the original, plus something new.
+
+interface Rectangle{
+    height:number,
+    width:number
+}
+
+interface ColoredRectangle extends Rectangle{
+    color:string
+}
+
+const ColoredRectangle: ColoredRectangle={
+    height:40,
+    width:56,
+    color:"red"
+};
