@@ -1,4 +1,5 @@
-STEPS:
+#STEPS:
+
 1: CREATEd a folder on desktop
 2: OPEN in VS code
 3: OPEN terminal
@@ -13,4 +14,17 @@ STEPS:
     √ Would you like to customize the import alias (@/* by default)? ... No / Yes
     SELECT as shown above,your new folder with nextjs tools will be installed
 7: "npm run dev" to see our application run on default browser.
-8: 
+
+
+
+
+
+#Features of nextjs 15
+
+1:  Hot Module Replacement   :   changes made in code directly effect browsing page.
+2:  fonts        :  we see fonts folder that effects our fonts.
+3:  favicon.ico  :  file that appears on browsers tab.
+4:  globals.css  :  for fonts or directly to import tailwindcss.
+5:  layout.tsx   :  anything done here effects all pages and routes. 
+                    ex: added metadata title as hello 👋👋 ( we can add emojis - win+; ,also browsing window Arc like google chrome is used for better display.)
+6:  page.tsx     :  for our code and changes.   
