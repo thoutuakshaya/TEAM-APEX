@@ -38,4 +38,4 @@ TO REFER ABOVE IN DETAIL -"https://nextjs.org/docs/app/building-your-application
 12:  Nested routes-if we want 2 pages with same name (like  dashboard ) we use nested routes with similar file but different names under same folder.
 13:  To direct into dashboard page(routes) we enter "http://localhost:3000/dashboard" in search tab.
      similarly for analytics tab "http://localhost:3000/dashboard/analytics".
-
+14:  Dynamic Routing: this concept is used when we need details of blocks clicking it but not by separate page creation (routes) but in same route .

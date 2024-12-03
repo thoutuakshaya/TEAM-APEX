@@ -1,6 +1,8 @@
+import React from 'react'
+
 const page = () => {
   return (
-    <div>user DETAILS</div>
+    <div>user 1</div>
   )
 }
 
