@@ -1,8 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const page = ({params}:{params:{id:string}}) => {
+  const{id}=params;
   return (
-    <div>user 1</div>
+    <h1 className='text-3xl'>user profile:{id}</h1>
   )
 }
 
