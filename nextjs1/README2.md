@@ -53,8 +53,39 @@ This combines the best of both worlds!
 NOTE: NAMES layout.tsx,page.tsx is only recognised by nextjs ,otherwise it shows error.
 
 16: GROUPING ROUTES (route groups): 
-    problem: to get seperate layout.tsx to dashboard and user frontend,unlike we have same layout.tsx.
-    solution: we use seperate folders for dashboard and root and keep them in braces as in code.
+    Problem : to get seperate layout.tsx to dashboard and user frontend,unlike we have same layout.tsx.
+    Solution : we use seperate folders for dashboard and root and keep them in braces as in code.
 
     NOTE: "(dashboard)" is different from "dashboard".
-17: 
+17: ERROR HANDLING :A separate folder "error.tsx" is provided by nextjs ,such that end user doesnot see detailed version of error like developer do.
+TO REFER MORE :https://nextjs.org/docs/app/building-your-application/routing/error-handling
+18: Adding LOADER: simply add a folder "loading.tsx" to create a loader.
+19: DataFetching : unlike previous version we dont need to write clumsy code ,better see the code ->trail.tsx. 
+=>there json data is from websites like MOCKAPI, TYPICODE.
+20:Server components HMR cache:store each load as a cache ,fast response.
+->server side fetching -->benefits--> 1.developer experience(less code).
+2.improved load time.
+3.better SEO
+4.SIMPLIFIED LOGIC
+5.automatic request deduplication (reduce unnecessary api codes)
+6.improved security.
+7.reduced network waterfall.
+21.Static site generation(SSG):A technique where HTML pages are generated at build time.
+22.incremental static generation (ISG)-extension of SSG.
+---disadvantage of SSG,to not reload the updated code is improved by ISG.
+---1.TIME BASED REVALIDATION.(sets time)
+---2.REVALIDATE REQUEST AGTER SOME TIME.
+---3.ON DEMAND REVALIDATION.
+23.SERVER SIDE RENDERING(SSR):generated HTML for a page on server in response to users.
+-content is created dynamically for each user request.and not for each deployment.
+--disadvantage-slower than SSG,puts more load on server.
+--advantage-always have updated content.
+24.PARTIAL PRERENDERING (PPR)--combines static rendering and dynamic rendering.
+    -allows to render a static shell of page while seeing dynamic content
+    -key difference WITH PPR: allows for a hybrid approach for single page.
+    WORKING-during build,nextjs generates a static shell of pages,which has components that are dynamic.
+25.BACKEND:
+    SETTING UP ROUTES:
+        no need for setup manage monitor on active etc as in previous version
+        -JUST NAME A NEW FOLDER AS "ROUTE.TS".
+26: EXPORT : to export to various platform -METADATA. (generateMetadata export it)
