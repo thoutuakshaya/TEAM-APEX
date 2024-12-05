@@ -41,3 +41,20 @@ TO REFER ABOVE IN DETAIL -"https://nextjs.org/docs/app/building-your-application
 14:  Dynamic Routing: this concept is used when we need details of blocks clicking it but not by separate page      creation (routes) but in same route .
     -to extract different info from different users we use -PARAMS _instance of MDX Components.
 
+---rendering
+Modern frameworks like Next.js and Nuxt.js support a hybrid approach:
+
+Use SSR for initial rendering (faster load, SEO-friendly).
+Use CSR for subsequent page interactions (better interactivity).
+This combines the best of both worlds!
+
+15: layout.tsx is the main page which effects all the pages(routes) across code.
+
+NOTE: NAMES layout.tsx,page.tsx is only recognised by nextjs ,otherwise it shows error.
+
+16: GROUPING ROUTES (route groups): 
+    problem: to get seperate layout.tsx to dashboard and user frontend,unlike we have same layout.tsx.
+    solution: we use seperate folders for dashboard and root and keep them in braces as in code.
+
+    NOTE: "(dashboard)" is different from "dashboard".
+17: 
