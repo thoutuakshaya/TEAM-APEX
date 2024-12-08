@@ -10,7 +10,6 @@ async function Home() {
                 <div key={album.id} className="text-lg"></div>
             ))}
         </div>
-    )
-   
+    )   
 }
 export default Home;

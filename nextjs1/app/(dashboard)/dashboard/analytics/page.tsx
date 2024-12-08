@@ -3,5 +3,4 @@ const page = () => {
     <div>analytics</div>
   )
 }
-
 export default page
