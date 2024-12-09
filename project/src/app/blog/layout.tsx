@@ -17,13 +17,14 @@ export default function RootLayout({
         <nav>
           <ul>
             <li>
-            <Link href="/profile">PROFILE</Link>
-              </li>
+            
+              <nav><li>
+              <Link href="/blog/first">BLOG1</Link></li>
               <li>
-              <Link href="/blog">BLOG</Link>
-              
-              
-              <Link href="/products">products</Link></li></ul></nav></header>{children}</body>
+              <Link href="/blog/second">BLOG2</Link>
+              </li></nav>
+             
+              </li></ul></nav></header>{children}</body>
     </html>
   )
 }
