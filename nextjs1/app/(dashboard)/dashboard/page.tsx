@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from "next/link";
-const page = () => {
+const Page = () => {
   return (
     
     <div>
-    <h1>dashboard USERS</h1>
+    <h1>Dashboard USERS</h1>
 
-    <ul>
+    <ul className='mt-10'>
         <li><Link href="/dashboard/users/1">user 1</Link></li>
         <li><Link href="/dashboard/users/2">user 2</Link></li>
         <li><Link href="/dashboard/users/3">user 3</Link></li>
@@ -17,4 +17,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
