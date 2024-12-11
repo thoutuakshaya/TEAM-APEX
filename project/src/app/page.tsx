@@ -1,3 +1,4 @@
 export default function Home(){
-    return <h1>Homie BABA page😅🤣</h1>
+    return <div className="bg-red-700 p-4 text-white">Test Tailwind</div>
+
 }

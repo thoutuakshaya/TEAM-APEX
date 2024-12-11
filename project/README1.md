@@ -63,4 +63,32 @@ DOM updation                          ❌❌❌❌
 ➡️It ensures the component follows the correct function signature (like props and return type).
 
 
-❔
+❔ROUTES:
+we just create a seperat folder in src->app->new_folder->route.ts  for creating routes.
+
+🔒🔐PRIVATE FOLDERS
+-cant be viewed on browser
+-used for
+    -seperating ui logic from routing logic
+    -consistently organizing internal files across a project
+    -sorting and grouping files in code editors
+    -avoiding potential naming conflicts with future Next.js file conventions.
+    -%5F , _(name of private folder) 
+        ex: _lib,%5Flib-its visible when %5Flib is kept.
+
+
+
+🌟ROUTING GROUPS
+for large applications folders become complex.
+and to direct them the path also become longer.
+solution-💡: for this routing groups are introduced ,where a folder is kept in braces that holds multiple sub folders but the path is not effected.
+
+
+🌟LAYOUTS-layout.tsx
+-A page is UI that is unique to a route.
+-A layout is UI that is shared between multiple pages in app.
+*header,*footer ...
+
+
+🌟get request
+🌟post request

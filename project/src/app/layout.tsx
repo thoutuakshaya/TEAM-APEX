@@ -1,4 +1,4 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export const metadata = {
   title: 'Next.js',
@@ -13,8 +13,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body><header>
-        <nav>
+      <body><header className='bg-red-700'>
+        <p>header</p>
+        </header>
+        {children}
+        <footer 
+        style={{
+          backgroundColor:"pink",padding:"1rem",
+        }}>
+          footer
+        </footer>
+        </body>
+        {/* <nav>
           <ul>
             <li>
             <Link href="/profile">PROFILE</Link>
@@ -23,7 +33,7 @@ export default function RootLayout({
               <Link href="/blog">BLOG</Link>
               
               
-              <Link href="/products">products</Link></li></ul></nav></header>{children}</body>
+              <Link href="/products">products</Link></li></ul></nav></header>{children}</body> */}
     </html>
   )
 }
