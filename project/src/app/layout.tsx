@@ -17,12 +17,12 @@ export default function RootLayout({
         <p>header</p>
         </header>
         {children}
-        <footer 
+        {/* <footer 
         style={{
           backgroundColor:"pink",padding:"1rem",
         }}>
           footer
-        </footer>
+        </footer> */}
         </body>
         {/* <nav>
           <ul>
