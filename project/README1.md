@@ -17,9 +17,9 @@ RULES
 🫰every folder corresponds to path segment in browser URL.
 
 🥇NESTED ROUTES example
-    <div>🍉🍅🍓BLOG-HELLO FOODIES🍇😋🍒</div>
-       -- <div>🍉🍅🍓11111🍇😋🍒</div>
-       -- <div>🍉🍅🍓22222🍇😋🍒</div>
+    <div>🍉🍅🍓BLOG-HELLO FOODIES🍇😋</div>
+       -- <div>🍉🍅🍓11111🍇😋</div>
+       -- <div>🍉🍅🍓22222🍇😋</div>
 
 🥈 DYNAMIC ROUTES example
     see Products
@@ -92,3 +92,16 @@ solution-💡: for this routing groups are introduced ,where a folder is kept in
 
 🌟get request
 🌟post request
+🌟patch request
+🌟delete request
+
+
+💡METADATA API💡
+Ensuring proper search engine optimization(SEO) is crucial for increasing visibility and attracting users.
+we can define metadata for each page.tsx
+why-❔❓
+    💡accurate and relavant information is display when shared or indexed.(not layout of page but data in page).
+    💡Both page.tsx and layout.tsx can export metadata.
+     💡METADATA is read in order from root level to final page level.
+      💡when thers metadata in multiple places for same route,they get combined,but page metadata will replace layout metadata if they have the same properties.   
+      2types -static and dynamic.qq
