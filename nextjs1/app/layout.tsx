@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
+// import Link from 'next/link';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 export const metadata: Metadata = {
   title: "hello 👋👋",
@@ -25,12 +26,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <h1 className="text-4xl">root</h1>
-        {children}
-      </body>
-    </html>
+      
+    <body><header className='bg-white '>
+      <p>header</p>
+      </header>
+      {children}
+       <footer 
+      style={{
+        backgroundColor:"white",padding:"1rem",
+      }}>
+        footer
+      </footer> 
+{/*       
+       <nav>
+        <ul>
+          <li>
+          <Link href="/profile">PROFILE</Link>
+            </li>
+            <li>
+            <Link href="/blog">BLOG</Link>
+            
+            
+            <Link href="/products">products</Link></li></ul></nav>{children}</body>  */}
+            </body>
+  </html>
   );
 }
