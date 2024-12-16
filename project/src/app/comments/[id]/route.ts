@@ -1,5 +1,6 @@
 import { type NextRequest } from "next/server";
-import {comments} from "./data"
+import {comments} from "../data"
+import { redirect } from "next/navigation";
 
 // export async function GET(){
 //     return Response.json(comments);
@@ -9,9 +10,13 @@ import {comments} from "./data"
 
 
 
-export async function GET(request:NextRequest){
+export async function GET(request:NextRequest,{params}:{params:{id:string}}){
     const searchParams=request.nextUrl.searchParams;
+    
     const query=searchParams.get("query")
+    if (parseInt(params.id)>comments.length){
+        redirect("/comments");
+    }
     const filteredcomments=query?comments.filter(comment=>comment.text.includes(query)):comments;
     return Response.json(filteredcomments);
 }

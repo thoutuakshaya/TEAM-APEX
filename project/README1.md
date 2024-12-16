@@ -104,4 +104,17 @@ why-❔❓
     💡Both page.tsx and layout.tsx can export metadata.
      💡METADATA is read in order from root level to final page level.
       💡when thers metadata in multiple places for same route,they get combined,but page metadata will replace layout metadata if they have the same properties.   
-      2types -static and dynamic.qq
+      2types -static and dynamic.
+
+
+URL QUERY PARAMETERS (video-39 codevolution)
+- to get the  require search from query provided we use "nextRequest" from "next/server".
+http://localhost:3000/comments?id=2 to get a particular one in thunder client.
+http://localhost:3000/comments?query=first similarly in browser we get only first comments that has first in it.
+
+
+
+REDIRECTS IN ROUTE HANDLERS:
+as in comments -> [id] when the condition provided is false it redirects into comments page as before /1,/2,/3 remains uneffected,unlike (http://localhost:3000/comments/4) which redirects into comments page.
+
+

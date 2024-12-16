@@ -1,14 +1,14 @@
 export const comments=[
     {
         id:1,
-        text:"gdsgs"
+        text:"first"
     },
     {
         id:2,
-        text:"gdsghs"
+        text:"second"
     },
     {
         id:3,
-        text:"gdsgsf"
+        text:"third"
     }
 ];
