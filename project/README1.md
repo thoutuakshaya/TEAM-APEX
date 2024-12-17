@@ -117,4 +117,27 @@ http://localhost:3000/comments?query=first similarly in browser we get only firs
 REDIRECTS IN ROUTE HANDLERS:
 as in comments -> [id] when the condition provided is false it redirects into comments page as before /1,/2,/3 remains uneffected,unlike (http://localhost:3000/comments/4) which redirects into comments page.
 
+added shadCN by below command
+npm install @shadcn/ui
+
+
+headers in route handlers:
+can add html formating in route.ts too as in api->route.ts
+added authorization header in get method in api and got output in console the header i gave.
+
+TEMPLATES:
+CONTENT like input column THAT DOESNOT REMAIN CONSTANT WHEN WE SHIFT TO OTHER LINKS.
+we name as template.tsx
+ex:in group we named template.tsx,name layout.tsx and see the difference.
+we can declare both layout and template same time ,template act as child to layout.
+
+SPECIAL FILES
+page.tsx
+layout.tsx
+template.tsx
+not-found.tsx
+loading.tsx
+error.tsx
+
+
 
