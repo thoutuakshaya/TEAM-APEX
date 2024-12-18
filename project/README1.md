@@ -139,5 +139,38 @@ not-found.tsx
 loading.tsx
 error.tsx
 
+error.tsx
+reset function execution-recovery from error
+handling errors in nested function
+handling errors in layouts
 
 
+
+PARALLEL ROUTES
+Parallel routes are an advanced routing mechanism that allowsfor the simultaneous rendering of multiple pages within the same layout.
+complex dashboard(write copy code)
+parallel routes in Next.js are defined using a feature known as slot.
+slots help structure out content in a modular fashion.
+to define a slot,we use the '@folder' naming convention.
+each slot is then passed as a prop to its corresponding 'layout.tsx' file.
+advantage : can have seperate loading and error effects.
+
+
+Unmatched routes
+Navigation from ui:
+in case of navigation within theUI,NExt.js retains the previously active state of slot regardless of changes in URL.
+pAGE RELOAD: FINDS default.tsx, not found then shows error.or not found
+
+
+CONDITIONAL ROUTES:
+INTERCEPTING ROUTES:
+intercepting routes allow you to intercept or stop the default route behaviour to present an alternate view or component when navigating through UI while still preserving the intended route for scenarios like page reloads.
+login form (ex)
+(.)to match segmengs on same level.
+(..)to match segmengs one level above.
+(..)(..)to match segmengs two levels above.
+(...)to match from root file directory.
+
+
+PARALLEL INTERCEPTING ROUTES:
+ex: when we click image it highlights and background images also appears with opacity.
