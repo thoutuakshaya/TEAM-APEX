@@ -53,12 +53,16 @@ export const SkillData = [
     width: 80,
     height: 80,
   },
+
+
   {
     name: "Mongo db",
     Image: "/mongodb.png",
     width: 40,
     height: 40,
   },
+
+  
 ];
 
 export const Socials = [

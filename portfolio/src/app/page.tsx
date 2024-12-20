@@ -12,7 +12,7 @@ export default function Home() {
       {/* Main container with background */}
       <div
         className="flex w-full h-full bg-cover bg-white bg-center"
-       // style={{ backgroundImage: "url(/pic1.jpg)" }}
+        style={{ backgroundImage: "url(/pic1.jpg)" }}
       >
         {/* Left Section */}
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[50%]">
