@@ -174,3 +174,24 @@ login form (ex)
 
 PARALLEL INTERCEPTING ROUTES:
 ex: when we click image it highlights and background images also appears with opacity.
+
+
+
+
+AUTH.JS
+Installation -npm install next-auth@beta zod
+            -pnpm add next-auth@beta zod
+
+for shadcn installation -pnpm dlx shadcn-ui@latest init
+for specifically install a component in shadcn -npx shadcn-ui@latest add Button
+
+🌟🌟🌟🌟🌟🌟
+To check all directives installed -"npm list -g --depth=0"
+output:
+C:\Users\DELL\AppData\Roaming\npm
+├── create-next-app@15.1.0
+├── expo@51.0.18
+├── express-generator@4.16.1
+├── npm@10.9.1
+├── shadcn-ui@0.9.4
+└── typescript@5.6.3
