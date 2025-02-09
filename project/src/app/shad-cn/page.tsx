@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@shadcn/ui'; // Import Button from ShadCN UI
 
+
 const App = () => {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
