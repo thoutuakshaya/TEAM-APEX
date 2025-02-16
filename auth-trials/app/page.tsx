@@ -27,8 +27,8 @@ export default function Home() {
       <p className="text-white">a simple authentication service</p>
       </div>
       <div>
-        <LoginButton>
-      <Button variant="secondary" className="w-lg">Sign in</Button>
+        <LoginButton >
+      <Button variant="secondary" className="lg ">Sign in</Button>
       </LoginButton>
       </div>
       </main>
