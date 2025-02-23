@@ -16,7 +16,7 @@ export const LoginButton = ({
     children,
     mode="redirect",
 
-    asChild }: LoginButtonProps) => {
+   }: LoginButtonProps) => {
         const router=useRouter();
         const onClick=()=>{
             

@@ -17,7 +17,7 @@ export default function Home() {
 
       <main className="flex h-full flex-col items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
        from-sky-400 to-blue-800">
-        <div className="space-y-6 text-center">
+        <div className="space-y-5 text-center">
       <h1 className={cn(
         "text-6xl drop-shadow-md font-semibold  text-white",
         font.className
@@ -28,7 +28,7 @@ export default function Home() {
       </div>
       <div>
         <LoginButton >
-      <Button variant="secondary" className="lg ">Sign in</Button>
+      <Button variant="secondary" className="lg space-y-6 ">Sign in</Button>
       </LoginButton>
       </div>
       </main>
