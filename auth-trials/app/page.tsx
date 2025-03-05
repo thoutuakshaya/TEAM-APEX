@@ -5,8 +5,9 @@ import { LoginButton } from "@/components/auth/login-button";
 
 const font=Poppins({  
   subsets: ['latin'],
-  weight: ["600"]
   
+  weight: ["600"]
+
 })
 export default function Home() {
     return(<>
